@@ -1,0 +1,364 @@
+// 1680px
+@include xxxxxlg-xxxxxxlg {
+    .auto__container {
+        padding: 0 80px;
+    }
+    h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 44px;
+        &.reg {
+          font-size: 38px;
+          line-height: 46px;
+        }
+    }
+    h3 {
+        font-size: 34px;
+        line-height: 40px;
+        &.big {
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+    h4 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    @include hero-xxxxxlg-xxxxxxlg;
+    @include banner-xxxxxlg-xxxxxxlg;
+    @include motto-xxxxxlg-xxxxxxlg;
+    @include info-xxxxxlg-xxxxxxlg;
+    @include support-xxxxxlg-xxxxxxlg;
+    @include news-xxxxxlg-xxxxxxlg;
+    @include footer-xxxxxlg-xxxxxxlg;
+}
+// 1550px
+@include xxxxlg-xxxxxlg {
+    .auto__container {
+        padding: 0 70px;
+    }
+    h4 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .button {
+        padding: 16px 24px;
+        &__row {
+            .button {
+                margin-right: 10px;
+            }
+        }
+    }
+    @include hero-xxxxlg-xxxxxlg;
+    @include banner-xxxxlg-xxxxxlg;
+    @include motto-xxxxlg-xxxxxlg;
+    @include info-xxxxlg-xxxxxlg;
+    @include support-xxxxlg-xxxxxlg;
+    @include news-xxxxlg-xxxxxlg;
+    @include footer-xxxxlg-xxxxxlg;
+}
+// 1290px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 60px;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 36px;
+        &.reg {
+          font-size: 33px;
+          line-height: 42px;
+        }
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 36px;
+        &.big {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 26px;
+        &.big {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+    p.sm {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    p.big {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .button {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 14px 30px;
+    }
+    .logo {
+        width: 250px;
+        font-size: 20px;
+        line-height: 24px;
+        span {
+            width: 34px;
+            height: 34px;
+            margin-right: 18px;
+        }
+    }
+    @include nav-xlg-xxlg;
+    @include header-xlg-xxlg;
+    @include hero-xlg-xxlg;
+    @include banner-xlg-xxlg;
+    @include motto-xlg-xxlg;
+    @include info-xlg-xxlg;
+    @include support-xlg-xxlg;
+    @include news-xlg-xxlg;
+    @include footer-xlg-xxlg;
+}
+// 1180px
+@include xlg-xxlg-extra {
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .button {
+        padding: 12px 28px;
+    }
+    @include hero-xlg-xxlg-extra;
+    @include banner-xlg-xxlg-extra;
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .auto__container {
+        padding: 0 30px;
+    }
+    h2 {
+        &.reg {
+            font-size: 28px;
+            line-height: 39px;
+        }
+    }
+    h3 {
+        &.big {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+    .button {
+        padding: 12px 16px;
+    }
+    @include nav-lg-xlg;
+    @include header-lg-xlg;
+    @include hero-lg-xlg;
+    @include banner-lg-xlg;
+    @include motto-lg-xlg;
+    @include info-lg-xlg;
+    @include support-lg-xlg;
+    @include news-lg-xlg;
+    @include footer-lg-xlg;
+}
+// 900px
+@include md-lg {
+    h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h2 {
+        &.reg {
+          font-size: 25px;
+          line-height: 35px;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .arrow {
+        width: 35px;
+        height: 35px;
+        img {
+          width: 20px;
+          height: 13px;
+        }
+        &.active {
+            bottom: 20px;
+        }
+      }
+    @include hero-md-lg;
+    @include banner-md-lg;
+    @include motto-md-lg;
+    @include info-md-lg;
+    @include support-md-lg;
+    @include news-md-lg;
+    @include footer-md-lg;
+}
+// 770px
+@include sm-md {
+    h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 34px;
+        &.reg {
+          font-size: 24px;
+          line-height: 34px;
+        }
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 12px 14px;
+        &__row {
+            .button {
+                margin-right: 6px;
+            }
+        }
+    }
+    @include nav-sm-md;
+    @include header-sm-md;
+    @include hero-sm-md;
+    @include banner-sm-md;
+    @include motto-sm-md;
+    @include info-sm-md;
+    @include support-sm-md;
+    @include news-sm-md;
+    @include footer-sm-md;
+}
+// 670px
+@include sm-md-extra {
+    .button {
+        &__row {
+            .button {
+                margin-right: 12px;
+            }
+        }
+    }
+    @include nav-sm-md-extra;
+    @include hero-sm-md-extra;
+    @include banner-sm-md-extra;
+    @include motto-sm-md-extra;
+    @include info-sm-md-extra;
+    @include support-sm-md-extra;
+    @include news-sm-md-extra;
+    @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+    h1 {
+        span {
+            margin-bottom: 30px;
+        }
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    @include hero-xsm-sm;
+    @include banner-xsm-sm;
+    @include motto-xsm-sm;
+    @include support-xsm-sm;
+    @include info-xsm-sm;
+    @include news-xsm-sm;
+    @include footer-xsm-sm;
+}
+// 420px
+@include xxsm-xsm {
+    h2 {
+        font-size: 18px;
+        line-height: 24px;
+        &.reg {
+          font-size: 18px;
+          line-height: 28px;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .button {
+        padding: 10px 12px;
+        &__row {
+            .button {
+                margin-right: 18px;
+            }
+        }
+    }
+    @include nav-xxsm-xsm;
+    @include header-xxsm-xsm;
+    @include hero-xxsm-xsm;
+    @include info-xxsm-xsm;
+    @include support-xxsm-xsm;
+    @include news-xxsm-xsm;
+    @include footer-xxsm-xsm;
+}
+// 370px
+@include xxxsm-xxsm {
+    .auto__container {
+        padding: 0 20px;
+    }
+    .button {
+        font-size: 12px;
+        line-height: 16px;
+        &__row {
+            .button {
+                margin-right: 10px;
+            }
+        }
+    }
+    @include nav-xxxsm-xxsm;
+    @include hero-xxxsm-xxsm;
+    @include banner-xxxsm-xxsm;
+    @include motto-xxxsm-xxsm;
+    @include info-xxxsm-xxsm;
+    @include support-xxxsm-xxsm;
+    @include news-xxxsm-xxsm;
+    @include footer-xxxsm-xxsm;
+
+}

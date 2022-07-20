@@ -1,0 +1,246 @@
+.footer {
+  background-color: $main;
+  padding: 140px 0 150px;
+  position: relative;
+  .auto__container {
+    padding: 0 190px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: $primary;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 40%;
+      max-width: 360px;
+      max-height: 35px;
+      margin: 0;
+      font-size: 28px;
+      line-height: 35px;
+    }
+    &-row {
+      width: 60%;
+      max-width: 750px;
+      margin: 0 -25px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-col {
+      width: calc(30% - 50px);
+      margin: 0 25px;
+      display: flex;
+      flex-direction: column;
+      &:first-child {
+        width: calc(25% - 50px);
+      }
+      &:last-child {
+        width: calc(45% - 50px);
+      }
+    }
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      white-space: nowrap;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.under {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// 1680px
+@mixin footer-xxxxxlg-xxxxxxlg {
+  .footer {
+    .auto__container {
+      padding: 0 160px;
+    }
+  }
+}
+// 1550px
+@mixin footer-xxxxlg-xxxxxlg {
+  .footer {
+    .auto__container {
+      padding: 0 140px;
+    }
+    &__inner {
+      .logo {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      a {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+// 1290px
+@mixin footer-xlg-xxlg {
+  .footer {
+    padding: 80px 0 110px;
+    .auto__container {
+      padding: 0 110px;
+    }
+    &::after {
+      height: 15px;
+    }
+    &__inner {
+      .logo {
+        width: 35%;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &-row {
+        width: 65%;
+        margin: 0 -20px;
+      }
+      &-col {
+        width: calc(35% - 40px);
+        margin: 0 20px;
+        &:first-child {
+          width: calc(25% - 40px);
+        }
+        &:last-child {
+          width: calc(40% -40px);
+        }
+      }
+      a {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin footer-lg-xlg {
+  .footer {
+    padding: 70px 0 90px;
+    .auto__container {
+      padding: 0 90px;
+    }
+    &::after {
+      height: 13px;
+    }
+    &__inner {
+      flex-direction: column;
+      .logo {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      &-row {
+        width: 100%;
+        max-width: 580px;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+// 900px
+@mixin footer-md-lg {
+  .footer {
+    .auto__container {
+      padding: 0 80px;
+    }
+  }
+}
+// 770px
+@mixin footer-sm-md {
+  .footer {
+    .auto__container {
+      padding: 0 75px;
+    }
+    &__inner {
+      flex-direction: column;
+      &-row {
+        width: 100%;
+        max-width: 580px;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+// 670px
+@mixin footer-sm-md-extra {
+  .footer {
+    .auto__container {
+      padding: 0 50px;
+    }
+    &__inner {
+      &-row {
+        max-width: unset;
+        align-self: flex-start;
+      }
+    }
+  }
+}
+// 540px
+@mixin footer-xsm-sm {
+  .footer {
+    .auto__container {
+      padding: 0 35px;
+    }
+    &__inner {
+      flex-direction: column;
+      &-row {
+        flex-direction: column;
+        width: 100%;
+        max-width: unset;
+        margin: 0;
+        padding-left: 50px;
+      }
+      &-col {
+        margin: 0 0 40px 0;
+        &:nth-child(n) { 
+          width: 100%;
+          max-width: unset;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+// 420px
+@mixin footer-xxsm-xsm {
+  .footer {
+    padding: 60px 0 80px;
+    .auto__container {
+      padding: 0 30px;
+    }
+  }
+}
+// 370px
+@mixin footer-xxxsm-xxsm {
+  .footer {
+    .auto__container {
+      padding: 0 20px;
+    }
+    &__inner {
+      &-row {
+        padding: 0;
+        align-items: center;
+      }
+      &-col {
+        &:nth-child(n) {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
